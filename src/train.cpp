@@ -14,12 +14,12 @@ Train :: Train() {
 }
 
 void Train :: addCage(bool light) {
-  if(!first) {
+  if (!first) {
     first = create(light);
     current = first;
   } else {
     current -> next = create(light);
-    curent -> next -> prev = current;
+    current -> next -> prev = current;
     current = current -> next;
     if (!current -> next) {
       current -> next = first;
@@ -49,7 +49,7 @@ int Train::getLength() {
       }
     }
   }
-  countOp += lenght;
+  countOp += length;
   return length;
 }
 
